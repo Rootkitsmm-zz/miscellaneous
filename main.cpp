@@ -34,7 +34,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	return 0;
 }
 
-int WINAPI SparyMemory()
+int WINAPI SprayMemory()
 {
 	WNDCLASSEX wc;
 	HWND hwnd;
@@ -160,7 +160,7 @@ void main()
 
 	LoadPrivilege(); 
 
-	SparyMemory();
+	SprayMemory();
 
 	//showWin32kUserHandleTable();
 
