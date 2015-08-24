@@ -1,8 +1,11 @@
 #include<Windows.h>
 #include<stdio.h>
 
-// based on http://j00ru.vexillium.org/?p=893
+// mail     : firozimaysam at gmail dot com
+// Telegram : https://telegram.me/firozi
 
+
+// based on http://j00ru.vexillium.org/?p=893
 /*
 One thing that the two processes (exploit and UTILMAN) have in common,
 is the desktop these two programs operate on. 
